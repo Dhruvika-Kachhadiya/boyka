@@ -1,0 +1,156 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://codepen.io/VehementJane/pen/YzMjQKG -->
+    <title>Time Left this Week</title>
+    <style>
+        body{
+            background-color: black;
+        }
+       
+        .box{
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #8a8f6a;
+            background-color: #8a8f6a;
+            color: white;
+            text-align: center;
+            padding-top:20px ;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+        .count{
+            display: inline-block;
+        }
+        .box1{
+            background-color: transparent;
+            border: 1px solid #8a8f6a;
+        }
+        .small{
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+    
+
+    </style>
+</head>
+<body>
+    
+    <div id="counter">
+   
+    <div class="count">
+        <h2 class="box" id="days1"></h2>
+        <h2 class="box box1" id="hours1"></h2>
+        <h2 class="box box1" id="minutes1"></h2>
+        <h2 class="box box1" id="seconds1"></h2>
+
+    </div>
+    <div class="count">
+        <h2 class="box" id="days2"></h2>
+        <h2 class="box box1" id="hours2"></h2>
+        <h2 class="box box1" id="minutes2"></h2>
+        <h2 class="box box1" id="seconds2"></h2>
+
+    </div>
+    <div class="count">
+        <h2 class="box" id="days3"></h2>
+        <h2 class="box box1" id="hours3"></h2>
+        <h2 class="box box1" id="minutes3"></h2>
+        <h2 class="box box1" id="seconds3"></h2>
+
+    </div>
+    </div>
+       
+    </div>
+
+
+
+<script>
+        function CountDownTimer  () {
+            left_days = document.getElementById("days1");
+            left_hours = document.getElementById("hours1");
+            left_minutes = document.getElementById("minutes1");
+            left_seconds = document.getElementById("seconds1");
+    
+        }
+        function showRemaining (){
+            now = new Date();
+        
+            days = 6 - now.getDay(); ;
+            hours = 23 - now.getHours();
+            minutes = 59 - now.getMinutes();
+            seconds = 59 - now.getSeconds();
+            left_days.innerHTML = days + "<br> <span class=\"small\"> days </span>"
+            left_hours.innerHTML = hours + "<br> <span class=\"small\"> hours</span>";
+            left_minutes.innerHTML = minutes + "<br> <span class=\"small\">mins</span>";
+            left_seconds.innerHTML = seconds + "<br> <span class=\"small\">secs</span>";
+        }
+
+            timer = setInterval (showRemaining, 1000) 
+            CountDownTimer() ;
+
+
+
+        function CountDownTimer2  () {
+            left_days2 = document.getElementById("days2");
+            left_hours2 = document.getElementById("hours2");
+            left_minutes2 = document.getElementById("minutes2");
+            left_seconds2 = document.getElementById("seconds2");
+    
+        }
+        function showRemaining2 (){
+            now = new Date();
+        
+            days2 = 6 - now.getDay(); ;
+            hours2 = 23 - now.getHours();
+            minutes2 = 59 - now.getMinutes();
+            seconds2 = 59 - now.getSeconds();
+            left_days2.innerHTML = days2 + "<br> <span class=\"small\"> days </span>"
+            left_hours2.innerHTML = hours2 + "<br> <span class=\"small\"> hours</span>";
+            left_minutes2.innerHTML = minutes2 + "<br> <span class=\"small\">mins</span>";
+            left_seconds2.innerHTML = seconds2 + "<br> <span class=\"small\">secs</span>";
+        }
+
+            timer = setInterval (showRemaining2, 1000) 
+            CountDownTimer2() ; 
+
+
+
+        function CountDownTimer3  () {
+            left_days3 = document.getElementById("days3");
+            left_hours3 = document.getElementById("hours3");
+            left_minutes3 = document.getElementById("minutes3");
+            left_seconds3 = document.getElementById("seconds3");
+    
+        }
+        function showRemaining3 (){
+            now = new Date();
+        
+            days3 = 6 - now.getDay(); ;
+            hours3 = 23 - now.getHours();
+            minutes3 = 59 - now.getMinutes();
+            seconds3 = 59 - now.getSeconds();
+            left_days3.innerHTML = days3 + "<br> <span class=\"small\"> days </span>"
+            left_hours3.innerHTML = hours3 + "<br> <span class=\"small\"> hours</span>";
+            left_minutes3.innerHTML = minutes3 + "<br> <span class=\"small\">mins</span>";
+            left_seconds3.innerHTML = seconds3 + "<br> <span class=\"small\">secs</span>";
+        }
+
+            timer = setInterval (showRemaining3, 1000) 
+            CountDownTimer3() ; 
+</script>
+</body>
+</html>
+
+<script>
+//   kofiWidgetOverlay.draw('vehementjane', {
+//     'type': 'floating-chat',
+//     'floating-chat.donateButton.text': 'Support me',
+//     'floating-chat.donateButton.background-color': '#794bc4',
+//     'floating-chat.donateButton.text-color': '#fff'
+//   });
+</script>
